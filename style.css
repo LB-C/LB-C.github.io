@@ -1,0 +1,29 @@
+body
+{
+    color: #1e344d;
+    background-color: #abc9be;
+}
+
+ul
+{
+    font-style: italic;
+}
+
+
+h1
+{
+    color: #59431e;
+}
+
+div
+{
+    border-bottom-style: dotted;
+}
+
+button
+{
+    background-color: #c8a4f5;
+    font-size: 30px;
+
+}
+

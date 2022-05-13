@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+        <!-- Bootstrap JavaScript Bundle with Popper -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+        <!-- CSS -->
+
+        <link href="style.css" rel="stylesheet">
+
+
+        <title>Personality Quiz</title>
+
+        <script>
+
+            // TODO: Add code to check answers to questions
+
+            let stroke = 0;
+            let seven = 0;
+            let six = 0;
+            let five = 0;
+            let four = 0;
+            let three = 0;
+            let two = 0;
+            let one = 0;
+            let cox = 0;
+
+            document.addEventListener('DOMContentLoaded', function() {
+
+                // Q1
+                let a = document.querySelector('.a');
+                a.addEventListener('click', function() {
+                    a.style.backgroundColor="#abced6";
+
+                    seven ++;
+                    two ++;
+                    four ++;
+                    five ++;
+                    cox ++;
+                });
+
+                let b = document.querySelector('.b');
+                b.addEventListener('click', function() {
+                    b.style.backgroundColor="#abced6";
+
+                    stroke ++;
+                    one ++;
+                    three ++;
+                    six ++;
+                });
+
+
+                //Q2
+                let c = document.querySelector('.c');
+                c.addEventListener('click', function() {
+                    c.style.backgroundColor="#abced6";
+
+                    stroke ++;
+                    six ++;
+                    four ++;
+                    seven ++;
+                    cox ++;
+                });
+
+                let d = document.querySelector('.d');
+                d.addEventListener('click', function() {
+                    d.style.backgroundColor="#abced6";
+
+                    five ++;
+                    three ++;
+                    one ++;
+                    two ++;
+                });
+
+
+
+                //Q3
+                let e = document.querySelector('.e');
+                e.addEventListener('click', function() {
+                    e.style.backgroundColor="#abced6";
+
+                    six ++;
+                    four ++;
+                    seven ++;
+                    one ++;
+                    cox ++;
+                });
+
+                let f = document.querySelector('.f');
+                f.addEventListener('click', function() {
+                    f.style.backgroundColor="#abced6";
+
+                    two ++;
+                    three ++;
+                });
+
+                let g = document.querySelector('.g');
+                g.addEventListener('click', function() {
+                    g.style.backgroundColor="#abced6";
+                    document.querySelector('#next').innerHTML = 'You are this percent of each seat.';
+
+                    stroke ++;
+                    five ++;
+                });
+
+
+
+
+                //Q4
+                let h = document.querySelector('.h');
+                h.addEventListener('click', function() {
+                    h.style.backgroundColor="#abced6";
+
+                    six ++;
+                    four ++;
+                    three ++;
+                    stroke ++;
+                });
+
+                let i = document.querySelector('.i');
+                i.addEventListener('click', function() {
+                    i.style.backgroundColor="#abced6";
+
+                    seven ++;
+                    three ++;
+                });
+
+                let j = document.querySelector('.j');
+                j.addEventListener('click', function() {
+                    j.style.backgroundColor="#abced6";
+
+                    two ++;
+                    one ++;
+                    cox ++;
+                });
+
+
+
+
+                //Q5
+                let k = document.querySelector('.k');
+                k.addEventListener('click', function() {
+                    k.style.backgroundColor="#abced6";
+
+                    cox ++;
+                    seven ++;
+                    five ++;
+                    two ++;
+                });
+
+                let l = document.querySelector('.l');
+                l.addEventListener('click', function() {
+                    l.style.backgroundColor="#abced6";
+
+                    stroke ++;
+                    six ++;
+                    four ++;
+
+                });
+
+                let m = document.querySelector('.m');
+                m.addEventListener('click', function() {
+                    m.style.backgroundColor="#abced6";
+
+                    three ++;
+                    one ++;
+                    cox ++;
+
+                });
+
+
+                //Q6
+                let n = document.querySelector('.n');
+                n.addEventListener('click', function() {
+                    n.style.backgroundColor="#abced6";
+
+
+                    two ++;
+                    four ++;
+                    seven ++;
+                    cox ++;
+                    five ++;
+                });
+
+                let o = document.querySelector('.o');
+                o.addEventListener('click', function() {
+                    o.style.backgroundColor="#abced6";
+
+                    stroke ++;
+                    three ++;
+                    one ++;
+                    six ++;
+                });
+
+
+                //Q7
+                let p = document.querySelector('.p');
+                p.addEventListener('click', function() {
+                    p.style.backgroundColor="#abced6";
+
+                    five ++;
+                    four ++;
+                    seven ++;
+                });
+
+                let q = document.querySelector('.q');
+                q.addEventListener('click', function() {
+                    q.style.backgroundColor="#abced6";
+
+                    three ++;
+                    six ++;
+
+                });
+
+                let r = document.querySelector('.r');
+                r.addEventListener('click', function() {
+                    r.style.backgroundColor="#abced6";
+
+                    two ++;
+                    one ++;
+                    stroke ++;
+
+                });
+
+                let s = document.querySelector('.s');
+                s.addEventListener('click', function() {
+                    s.style.backgroundColor="#abced6";
+
+                    cox ++;
+
+                });
+
+
+                //Q8
+                let t = document.querySelector('.t');
+                t.addEventListener('click', function() {
+                    t.style.backgroundColor="#abced6";
+
+                    stroke ++;
+                    four ++;
+                    document.querySelector('#next').innerHTML = 'This is how much your personality aligns with those of each seat in the boat. Navigate to the Seats of the Boat page to learn what this means!';
+                    let total = stroke + seven + six + five + four + three + two + one + cox;
+                    document.querySelector('#percents').innerHTML = 'Coxsw  ain = ' + ((cox / total) * 100).toFixed(1) + '%, ' + 'Stroke = ' + ((stroke / total) * 100).toFixed(1) + '%, ' + 'Seven = ' + ((seven / total) * 100).toFixed(1) + '%, ' + 'Six = ' + ((six / total) * 100).toFixed(1) + '%, ' + 'Five = ' + ((five / total) * 100).toFixed(1) + '%, ' + 'Four = ' + ((four / total) * 100).toFixed(1) + '%, ' + 'Three = ' + ((three / total) * 100).toFixed(1) + '%, ' + 'Two = ' + ((two / total) * 100).toFixed(1) + '%, ' + 'Bow = ' + ((one / total) * 100).toFixed(1) + '%';
+
+
+                });
+
+                let u = document.querySelector('.u');
+                u.addEventListener('click', function() {
+                    u.style.backgroundColor="#abced6";
+
+                    cox ++;
+                    two ++;
+                    document.querySelector('#next').innerHTML = 'This is how much your personality aligns with those of each seat in the boat. Navigate to the Seats of the Boat page to learn what this means!';
+                    let total = stroke + seven + six + five + four + three + two + one + cox;
+                    document.querySelector('#percents').innerHTML = 'Coxswain = ' + ((cox / total) * 100).toFixed(1) + '%, ' + 'Stroke = ' + ((stroke / total) * 100).toFixed(1) + '%, ' + 'Seven = ' + ((seven / total) * 100).toFixed(1) + '%, ' + 'Six = ' + ((six / total) * 100).toFixed(1) + '%, ' + 'Five = ' + ((five / total) * 100).toFixed(1) + '%, ' + 'Four = ' + ((four / total) * 100).toFixed(1) + '%, ' + 'Three = ' + ((three / total) * 100).toFixed(1) + '%, ' + 'Two = ' + ((two / total) * 100).toFixed(1) + '%, ' + 'Bow = ' + ((one / total) * 100).toFixed(1) + '%';
+
+                });
+
+                let v = document.querySelector('.v');
+                v.addEventListener('click', function() {
+                    v.style.backgroundColor="#abced6";
+
+                    seven ++;
+                    one ++;
+                    document.querySelector('#next').innerHTML = 'This is how much your personality aligns with those of each seat in the boat. Navigate to the Seats of the Boat page to learn what this means!';
+                    let total = stroke + seven + six + five + four + three + two + one + cox;
+                    document.querySelector('#percents').innerHTML = 'Coxswain = ' + ((cox / total) * 100).toFixed(1) + '%, ' + 'Stroke = ' + ((stroke / total) * 100).toFixed(1) + '%, ' + 'Seven = ' + ((seven / total) * 100).toFixed(1) + '%, ' + 'Six = ' + ((six / total) * 100).toFixed(1) + '%, ' + 'Five = ' + ((five / total) * 100).toFixed(1) + '%, ' + 'Four = ' + ((four / total) * 100).toFixed(1) + '%, ' + 'Three = ' + ((three / total) * 100).toFixed(1) + '%, ' + 'Two = ' + ((two / total) * 100).toFixed(1) + '%, ' + 'Bow = ' + ((one / total) * 100).toFixed(1) + '%';
+
+
+                });
+
+                let w = document.querySelector('.w');
+                w.addEventListener('click', function() {
+                    w.style.backgroundColor="#abced6";
+
+                    five ++;
+                    three ++;
+                    document.querySelector('#next').innerHTML = 'This is how much your personality aligns with those of each seat in the boat. Navigate to the Seats of the Boat page to learn what this means!';
+                    let total = stroke + seven + six + five + four + three + two + one + cox;
+                    document.querySelector('#percents').innerHTML = 'Coxswain = ' + ((cox / total) * 100).toFixed(1) + '%, ' + 'Stroke = ' + ((stroke / total) * 100).toFixed(1) + '%, ' + 'Seven = ' + ((seven / total) * 100).toFixed(1) + '%, ' + 'Six = ' + ((six / total) * 100).toFixed(1) + '%, ' + 'Five = ' + ((five / total) * 100).toFixed(1) + '%, ' + 'Four = ' + ((four / total) * 100).toFixed(1) + '%, ' + 'Three = ' + ((three / total) * 100).toFixed(1) + '%, ' + 'Two = ' + ((two / total) * 100).toFixed(1) + '%, ' + 'Bow = ' + ((one / total) * 100).toFixed(1) + '%';
+
+
+                });
+
+
+
+
+            });
+
+        </script>
+
+    </head>
+
+    <body>
+
+    <!-- how to make a nav bar knowledge from bootstrap https://getbootstrap.com/docs/4.0/components/navbar/ -->
+
+
+    <ul class="nav">
+
+    <li class="nav-item">
+
+    <a class="nav-link" href="https://ide-55ed7e9a9bc94d24802c300a62d945d2-8080.cs50.ws/index.html">Home</a>
+
+  </li>
+
+  <li class="nav-item">
+
+    <a class="nav-link" href="https://ide-55ed7e9a9bc94d24802c300a62d945d2-8080.cs50.ws/quiz.html">Personality Test</a>
+
+  </li>
+
+  <li class="nav-item">
+
+    <a class="nav-link" href="https://ide-55ed7e9a9bc94d24802c300a62d945d2-8080.cs50.ws/seats.html">Seats of the Boat</a>
+
+  </li>
+
+    <li class="nav-item">
+
+    <a class="nav-link" href="https://ide-55ed7e9a9bc94d24802c300a62d945d2-8080.cs50.ws/photos.html">Photos</a>
+
+  </li>
+
+    </ul>
+
+        <div class="mx-auto" style="width: 1300px">
+
+            <h1>Seat Personality Quiz</h1>
+
+            <h2>Find out which seat in the boat most closely matches your personality! </h2>
+
+                <hr>
+
+                <!-- Question One -->
+
+            <h5>1) Are you outgoing?</h5>
+
+            <button class="a">Heck yeah ;)</button>
+
+            <button class="b">Not really</button>
+
+            <p></p>
+
+            <!-- Question Two -->
+
+           <h5>2) Are you a leader or a follower?</h5>
+
+            <button class="c">Leader</button>
+
+            <button class="d">Follower</button>
+
+            <p></p>
+
+            <!-- Question Three -->
+
+            <h5>3) Are you a dog or cat person?</h5>
+
+            <button class="e">Dog!</button>
+
+            <button class="f">CAT.</button>
+
+            <button class="g">neither</button>
+
+            <p></p>
+
+            <!-- Question Four -->
+
+            <h5>4) How do you eat pizza?</h5>
+
+            <button class="h">The normal way?</button>
+
+            <button class="i">Fold it,then eat it</button>
+
+            <button class="j">Crust first</button>
+
+            <p></p>
+
+            <!-- Question Five -->
+
+            <h5>5) On your day off, what you most like to do?</h5>
+
+            <button class="k">Sleep.</button>
+
+            <button class="l">Go for a hike with friends</button>
+
+            <button class="m">Bake cookies with my family</button>
+
+            <p></p>
+
+            <!-- Question Six -->
+
+            <h5>6) Sweet or Savory?</h5>
+
+            <button class="n">Sweet</button>
+
+            <button class="o">Savory</button>
+
+            <p></p>
+
+            <!-- Question Seven -->
+
+            <h5>7) If you could have a superpower, which would it be?</h5>
+
+            <button class="p">Super Strength</button>
+
+            <button class="q">Invisibility</button>
+
+            <button class="r">Ability to fly</button>
+
+            <button class="s">Mind control</button>
+
+            <p></p>
+
+            <!-- Question Eight -->
+
+            <h5>8) Favorite season?</h5>
+
+            <button class="t">Spring</button>
+
+            <button class="u">Summer</button>
+
+            <button class="v">Autumn</button>
+
+            <button class="w">Winter</button>
+
+            <p></p>
+
+            <p id="next"></p>
+
+            <p id="percents"></p>
+
+            </div>
+
+    </body>
+
+</html>

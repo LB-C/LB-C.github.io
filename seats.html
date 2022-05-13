@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <!-- Required Bootstrap meta tags -->
+
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+        <!-- Bootstrap JavaScript Bundle with Popper -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+        <!-- CSS -->
+
+        <link href="style.css" rel="stylesheet">
+
+        <title>Seats of an Eight</title>
+
+    </head>
+
+    <body>
+
+
+    <!-- how to make a nav bar knowledge from bootstrap https://getbootstrap.com/docs/4.0/components/navbar/ -->
+
+
+    <ul class="nav">
+
+    <li class="nav-item">
+
+    <a class="nav-link" href="https://ide-55ed7e9a9bc94d24802c300a62d945d2-8080.cs50.ws/index.html">Home</a>
+
+  </li>
+
+  <li class="nav-item">
+
+    <a class="nav-link" href="https://ide-55ed7e9a9bc94d24802c300a62d945d2-8080.cs50.ws/quiz.html">Personality Test</a>
+
+  </li>
+
+  <li class="nav-item">
+
+    <a class="nav-link" href="https://ide-55ed7e9a9bc94d24802c300a62d945d2-8080.cs50.ws/seats.html">Seats of the Boat</a>
+  </li>
+
+    <li class="nav-item">
+
+    <a class="nav-link" href="https://ide-55ed7e9a9bc94d24802c300a62d945d2-8080.cs50.ws/photos.html">Photos</a>
+
+  </li>
+
+    </ul>
+
+          <div class="mx-auto" style="width: 1300px">
+
+        <h1>The Seats in the Boat!</h1>
+
+        <h5>Try clicking on the head of each of the rowers in the image to be sent to an image search of the type of dog that best matches that seat's personality!</h5>
+
+        <!-- image from this url: https://images.nbcolympics.com/sites/default/files/2021-07/US-W8%2BH2.jpg -->
+
+        <img src="https://images.nbcolympics.com/sites/default/files/2021-07/US-W8%2BH2.jpg" alt="U.S. women's eight heads to final, gold defense within grasp | NBC Olympics" class="rounded float-start img-fluid" style="width: 900px; height: 506.25px; margin: 0px;" data-gg-hash="c076c7bfb492c2c9c413f9e36c660e442878bf7566d883fe73c2c4d477e66337" usemap="#workmap">
+
+<!-- making cards with bootstrap https://getbootstrap.com/docs/4.0/components/card/ -->
+
+<div class="card mx-auto" style="width: 24.5rem;">
+
+  <div class="card-body">
+
+    <h5 class="card-title">The Seats of an Eight</h5>
+
+    <p class="card-text">Every seat has a special personality! Read more on the seat you matched with using the Personality Quiz below!</p>
+
+    <h6 class="card-subtitle mb-2 text-muted">Coxswain</h6>
+
+    <p class="card-text">Can't tell left from right but can feel whenever 4's handle height is the tiniest bit too high.</p>
+
+    <h6 class="card-subtitle mb-2 text-muted">Stoke</h6>
+
+    <p class="card-text">Really sweet and a pushover until they are on the water. Then the competitive drive takes over and all the other boats start to fear for their lives.</p>
+
+    <h6 class="card-subtitle mb-2 text-muted">Seven</h6>
+
+    <p class="card-text">Seven seats are the complainers. They are never at fault; never rush the slide, never dunk the blade. That's all 3 seat.</p>
+
+    <h6 class="card-subtitle mb-2 text-muted">Six</h6>
+
+    <p class="card-text">The gentle giant. The supportive teammate who will comfort you after you find out they have a 30 second faster 2k time than you.</p>
+
+    <h6 class="card-subtitle mb-2 text-muted">Five</h6>
+
+    <p class="card-text">Always goes down to get all the oars and helps out the team in every extra way possible. </p>
+
+    <h6 class="card-subtitle mb-2 text-muted">Four</h6>
+
+    <p class="card-text">Always dresses for the wrong weather and asks 6 for their extra layers.</p>
+
+    <h6 class="card-subtitle mb-2 text-muted">Three</h6>
+
+    <p class="card-text">Always rolls up to practice 30 seconds late as to avoid taking oars down. But they'll make up for it by supplying chocolate milk at all the regattas.</p>
+
+    <h6 class="card-subtitle mb-2 text-muted">Two</h6>
+
+    <p class="card-text">Team cheerleader. When they shout, you can hear for miles around. Will always try to pass a high five through the boat (from bow to stroke).</p>
+
+    <h6 class="card-subtitle mb-2 text-muted">Bow</h6>
+
+    <p class="card-text">Always flirts with the coxswain. </p>
+
+  </div>
+
+</div>
+
+<!-- using https://www.rapidtables.com/web/tools/pixel-ruler.html to figure out distances and coordinates -->
+
+<!-- links are all used to get to a specific google image search of the dog that each seat is -->
+
+<map name="workmap">
+
+  <area id="stroke" shape="rect" coords="557,84,633,198" alt="German Shepherd" href="https://www.google.com/search?q=German+Shepherd&rlz=1CAOEMI_enUS969&stick=H4sIAAAAAAAAAONgFuLUz9U3SCqxzClS4gAxs3NNk7XUspOt9JMy83Py0yv1U_JzU4tLMpMTS1JT4hPzMnMTc6ySilJTU4oXsfK7pxblJuYpBGekFmSkFqUAAFF6k-VRAAAA&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi_tNbl4s33AhVvSjABHYmYCmMQ_AUoAXoECAIQAw&biw=1366&bih=617&dpr=1&safe=active&ssui=on">
+
+  <area id="seven" shape="rect" coords="480,87,538,174" alt="Poodle" href="https://www.google.com/search?q=Poodle&rlz=1CAOEMI_enUS969&stick=H4sIAAAAAAAAAONgFuLUz9U3SCqxzClSAjONstPKi7TUspOt9JMy83Py0yv1U_JzU4tLMpMTS1JT4hPzMnMTc6ySilJTU4oXsbIF5Oen5KQCADRlyQ5JAAAA&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiyls7R3s33AhV2TjABHT0SDmUQ_AUoAXoECAIQAw&biw=1366&bih=617&dpr=1&safe=active&ssui=on">
+
+  <area id="six" shape="rect" coords="435,70,470,158" alt="Golden Retriever" href="https://www.google.com/search?q=Golden+Retriever&rlz=1CAOEMI_enUS969&stick=H4sIAAAAAAAAAONgFuLUz9U3SCqxzClSAjMNSwyMjbTUspOt9JMy83Py0yv1U_JzU4tLMpMTS1JT4hPzMnMTc6ySilJTU4oXsQq45-ekpOYpBKWWFGWmlqUWAQBB5QNnUwAAAA&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiToqvA3s33AhWfVTABHXFbC2QQ_AUoAXoECAIQAw&biw=1366&bih=617&dpr=1&safe=active&ssui=on">
+
+  <area id="five" shape="rect" coords="357,70,413,158" alt="Bernese Mountain Dog" href="https://www.google.com/search?q=Bernese+Mountain+Dog&rlz=1CAOEMI_enUS969&stick=H4sIAAAAAAAAAONgFuLUz9U3SCqxzClSAjMNC0yLUrTUspOt9JMy83Py0yv1U_JzU4tLMpMTS1JT4hPzMnMTc6ySilJTU4oXsYo4pRblpRanKvjml-aVJGbmKbjkpwMAfh2VplcAAAA&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj1g5GY3833AhXNmYQIHeMRCU8Q_AUoAXoECAIQAw&biw=1366&bih=617&dpr=1&safe=active&ssui=on">
+
+  <area id="four" shape="rect" coords="288,51,342,136" alt="Doberman" href="https://www.google.com/search?q=Doberman&rlz=1CAOEMI_enUS969&stick=H4sIAAAAAAAAAONgFuLUz9U3SCqxzClSAjPNCgqNirTUspOt9JMy83Py0yv1U_JzU4tLMpMTS1JT4hPzMnMTc6ySilJTU4oXsXK45CelFuUm5gEADTINpEsAAAA&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiHneGF3833AhVPTjABHd3qBmQQ_AUoAXoECAIQAw&biw=1366&bih=617&dpr=1&safe=active&ssui=on">
+
+  <area id="three" shape="rect" coords="221,75,274,140" alt="Bullmastiff" href="https://www.google.com/search?q=Bullmastiff&rlz=1CAOEMI_enUS969&stick=H4sIAAAAAAAAAONgFuLUz9U3SCqxzClSAjMNMyryMrTUspOt9JMy83Py0yv1U_JzU4tLMpMTS1JT4hPzMnMTc6ySilJTU4oXsXI7lebk5CYCpdPSAKgN2QlOAAAA&source=lnms&tbm=isch&sa=X&ved=2ahUKEwij8bL33s33AhU6RDABHaK5AGAQ_AUoAXoECAIQAw&biw=1366&bih=617&dpr=1&safe=active&ssui=on">
+
+  <area id="two" shape="rect" coords="189,72,221,141" alt="Border Collier" href="https://www.google.com/search?q=Border+Collie&rlz=1CAOEMI_enUS969&stick=H4sIAAAAAAAAAONgFuLUz9U3SCqxzClS4gAxC8pTCrTUspOt9JMy83Py0yv1U_JzU4tLMpMTS1JT4hPzMnMTc6ySilJTU4oXsfI65RelpBYpOOfn5GSmAgDhzrukTwAAAA&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjgkPLe3s33AhW1SDABHYYEDWQQ_AUoAXoECAIQAw&biw=1366&bih=617&dpr=1&safe=active&ssui=on">
+
+  <area id="one" shape="rect" coords="154,43,188,132" alt="Pug" href="https://www.google.com/search?q=Pug&rlz=1CAOEMI_enUS969&stick=H4sIAAAAAAAAAONgFuLUz9U3SCqxzClSAjMNzcqzK7TUspOt9JMy83Py0yv1U_JzU4tLMpMTS1JT4hPzMnMTc6ySilJTU4oXsTIHlKYDAIcShbpGAAAA&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj92b7G3833AhXKRDABHXaVAy8Q_AUoAXoECAIQAw&biw=1366&bih=617&dpr=1&safe=active&ssui=on">
+
+  <area id="cox" shape="rect" coords="700,160,750,262" alt="Chihuahua" href="https://www.google.com/search?q=Chihuahua&rlz=1CAOEMI_enUS969&stick=H4sIAAAAAAAAAONgFuLUz9U3SCqxzClS4gAxszMyirXUspOt9JMy83Py0yv1U_JzU4tLMpMTS1JT4hPzMnMTc6ySilJTU4oXsXI6Z2RmlCYCEQCAiU9qSwAAAA&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiTjsKw3833AhViQjABHU-uAmQQ_AUoAXoECAIQAw&biw=1366&bih=617&dpr=1&safe=active&ssui=on">
+
+</map>
+
+</div>
+
+    </body>
